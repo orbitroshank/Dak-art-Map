@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* Colored Pins Filter Bar */}
-      <section className="py-8 bg-white">
+      <section className="py-8 bg-black">
         <div className="flex justify-center space-x-4">
           {[
             "red",
@@ -114,7 +114,7 @@ export default function Home() {
           ].map((color) => (
             <span
               key={color}
-              className={`w-6 h-6 rounded-full bg-${color}-500 ring-2 ring-white`}
+              className={`w-7 h-7 rounded-full bg-${color}-500 ring-2 ring-white`}
             />
           ))}
         </div>
@@ -133,7 +133,7 @@ export default function Home() {
             {/* Close Button (always on top) */}
             <button
               onClick={() => setShowMap(false)}
-              className="absolute top-6 right-6 z-60 bg-white bg-opacity-75 hover:bg-opacity-100 p-2 rounded-full text-xl"
+              className="absolute top-6 right-6 z-60 bg-white bg-opacity-75 hover:bg-gray-300 p-2 rounded-full text-xl"
             >
               ✕
             </button>
@@ -147,7 +147,7 @@ export default function Home() {
             >
               {/* Interactive Map */}
               <div className="absolute inset-0 z-40 pointer-events-auto">
-                <MapClient interactive={true} />
+                <MapClient locations={[]} />
               </div>
             </motion.div>
           </motion.div>
@@ -155,12 +155,12 @@ export default function Home() {
       </AnimatePresence>
 
       {/* About Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-black text-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">
             About This Project
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
+          <p className="text-white  leading-relaxed mb-6">
             This interactive art map of Dakar guides you through street murals,
             galleries, and public art installations. Built with Next.js,
             React-Leaflet, and Framer Motion, it lets you open the full map for
