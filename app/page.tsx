@@ -21,7 +21,9 @@ export default function Home() {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <Link
             href="/"
-            className="text-white text-xl font-bold hover:text-gray-400 transition-colors duration-200"
+            className="text-white text-xl font-bold 
+            hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r
+             hover:from-green-500 hover:via-yellow-400 hover:to-red-500 transition-colors duration-200"
           >
             Dak(art)
           </Link>
