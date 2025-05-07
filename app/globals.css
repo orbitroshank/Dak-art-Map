@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* styles/globals.css */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 10;
+}
