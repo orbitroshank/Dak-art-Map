@@ -1,33 +1,29 @@
+"use client";
+
 import React from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import artData from "../art-locations.json";
-import Link from "next/link";
+import { MapContainer, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
-type MapProps = { interactive: boolean };
+interface MapProps {
+  center?: [number, number];
+  zoom?: number;
+}
 
-export default function Map({ interactive }: MapProps) {
+export default function Map({
+  center = [14.6927, -17.4467],
+  zoom = 13,
+}: MapProps) {
   return (
     <MapContainer
-      center={[14.6927, -17.4467]}
-      zoom={13}
-      // only allow wheel‐zoom when “interactive” is true
-      scrollWheelZoom={interactive}
-      // map dragging will naturally respect pointer-events, so no need to disable it separately
-      style={{ height: "100%", width: "100%" }}
+      center={center}
+      zoom={zoom}
+      scrollWheelZoom
+      style={{ width: "100%", height: "100%" }}
     >
       <TileLayer
-        attribution="© OpenStreetMap contributors"
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution="© OpenStreetMap contributors"
       />
-      {artData.map((item) => (
-        <Marker key={item.id} position={[item.lat, item.lng]}>
-          <Popup>
-            <h3 className="font-bold">{item.name}</h3>
-            <p>{item.excerpt}</p>
-            <Link href={`/art/${item.slug}`}>Learn more</Link>
-          </Popup>
-        </Marker>
-      ))}
     </MapContainer>
   );
 }
