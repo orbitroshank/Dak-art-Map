@@ -14,3 +14,14 @@
   opacity: 0.5;
   z-index: 10;
 }
+
+.custom-pin-icon {
+  display: inline-block;
+  transform: translate(-50%, -100%);
+  pointer-events: none; /* clicks still hit the marker layer */
+}
+
+/* ensure marker pane sits atop any tile layer */
+.leaflet-marker-pane {
+  z-index: 650 !important;
+}

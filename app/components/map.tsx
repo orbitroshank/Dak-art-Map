@@ -1,7 +1,9 @@
 "use client";
 
 import React from "react";
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer, Pane, Marker, Popup } from "react-leaflet";
+import artData from "../art-locations.json";
+import { createPinIcon } from "./PinIcon";
 import "leaflet/dist/leaflet.css";
 
 interface MapProps {
@@ -19,11 +21,6 @@ export default function Map({
       zoom={zoom}
       scrollWheelZoom
       style={{ width: "100%", height: "100%" }}
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution="© OpenStreetMap contributors"
-      />
-    </MapContainer>
+    ></MapContainer>
   );
 }
