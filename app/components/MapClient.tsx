@@ -49,5 +49,5 @@ export default function MapClient() {
     };
   }, []);
 
-  return <div ref={mapRef} className="w-full h-screen" />;
+  return <div ref={mapRef} className="w-full h-full rounded-2xl" />;
 }
