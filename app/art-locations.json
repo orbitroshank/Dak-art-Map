@@ -1,50 +1,44 @@
 [
   {
-    "id": "paule-kahlo-mural",
-    "name": "Paule Kahlo Mural",
-    "lat": 14.6927,
-    "lng": -17.4467,
-    "excerpt": "A vibrant street mural celebrating local women artists.",
-    "slug": "paule-kahlo-mural"
+    "slug": "ancien-palais-de-justice",
+    "name": "Ancienn Palais de Justice",
+    "lat": 14.65247,
+    "lng": -17.4334,
+    "excerpt": "A vibrant street mural celebrating local women artists."
   },
   {
-    "id": "ifan-museum",
-    "name": "IFAN Museum of African Arts",
-    "lat": 14.6847,
-    "lng": -17.4455,
-    "excerpt": "One of West Africa’s oldest art museums, showcasing Senegalese and regional artworks.",
-    "slug": "ifan-museum"
+    "slug": "museum-of-black-civilizations",
+    "name": "The Museum of Black Civilizations",
+    "lat": 14.67757,
+    "lng": -17.43516,
+    "excerpt": "One of West Africa’s oldest art museums, showcasing Senegalese and regional artworks."
   },
   {
-    "id": "village-des-arts-du-senegal",
-    "name": "Village des Arts du Sénégal",
-    "lat": 14.6888,
-    "lng": -17.4294,
-    "excerpt": "A creative hub for local artists, featuring studios, galleries, and workshops.",
-    "slug": "village-des-arts-du-senegal"
+    "slug": "village-des-arts",
+    "name": "Village des Arts",
+    "lat": 14.746776752425195,
+    "lng": -17.457127899854584,
+    "excerpt": "A creative hub for local artists, featuring studios, galleries, and workshops."
   },
   {
-    "id": "monument-de-la-renaissance-africaine",
+    "slug": "monument-de-la-renaissance-africaine",
     "name": "Monument de la Renaissance Africaine",
     "lat": 14.7042,
     "lng": -17.4667,
-    "excerpt": "The iconic bronze statue symbolizing African emergence and unity.",
-    "slug": "monument-de-la-renaissance-africaine"
+    "excerpt": "The iconic bronze statue symbolizing African emergence and unity."
   },
   {
-    "id": "massalit-mural-installation",
+    "slug": "massalit-mural-installation",
     "name": "Massalit Mural Installation",
     "lat": 14.6922,
     "lng": -17.453,
-    "excerpt": "A vibrant street mural by collective Massalit, celebrating urban culture.",
-    "slug": "massalit-mural-installation"
+    "excerpt": "A vibrant street mural by collective Massalit, celebrating urban culture."
   },
   {
-    "id": "tata-senegal-gallery",
+    "slug": "tata-senegal-gallery",
     "name": "Tata Senegal Gallery",
     "lat": 14.6901,
     "lng": -17.4458,
-    "excerpt": "Contemporary gallery space highlighting emerging Senegalese multimedia artists.",
-    "slug": "tata-senegal-gallery"
+    "excerpt": "Contemporary gallery space highlighting emerging Senegalese multimedia artists."
   }
 ]

@@ -36,12 +36,20 @@ export default function MapClient() {
     ).addTo(map);
 
     artData.forEach((item) => {
+      const popupContent = `
+        <div style=\"display: flex; flex-direction: column; gap: 4px;\">
+          <strong>${item.name}</strong>
+          <p>${item.excerpt}</p>
+          <a href=\"/locations/${item.slug}\" style=\"color: #2563EB; text-decoration: underline;\">Read more →</a>
+        </div>
+      `;
+
       L.marker([item.lat, item.lng], {
         pane: "markerPane",
         icon: createPinIcon("#EF4444"),
       })
         .addTo(map)
-        .bindPopup(`<strong>${item.name}</strong><p>${item.excerpt}</p>`);
+        .bindPopup(popupContent);
     });
 
     return () => {
