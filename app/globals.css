@@ -25,3 +25,21 @@
 .leaflet-marker-pane {
   z-index: 650 !important;
 }
+/* globals.css */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #fdef42, #00853f);
+  background-size: 600% 600%;
+  animation: gradientShift 12s ease infinite;
+}

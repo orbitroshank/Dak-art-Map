@@ -15,42 +15,10 @@ export default function Home() {
   const [showMap, setShowMap] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      {/* Site Header */}
-      <header className="fixed w-full bg-black bg-opacity-80 z-40">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <Link
-            href="/"
-            className="text-white text-xl font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-green-500 hover:via-yellow-400 hover:to-red-500 transition-colors duration-200"
-          >
-            Dak(art)
-          </Link>
-
-          <nav className="flex space-x-6 text-white">
-            <Link
-              href="/locations"
-              className="hover:text-green-500 transition-colors duration-500"
-            >
-              Locations
-            </Link>
-            <Link
-              href="/about"
-              className="hover:text-yellow-300 transition-colors duration-500"
-            >
-              About
-            </Link>
-            <Link
-              href="/contact"
-              className="hover:text-red-400 transition-colors duration-500"
-            >
-              Contact
-            </Link>
-          </nav>
-        </div>
-      </header>
-
+    // Flex-1 ensures this page fills space between header and footer
+    <div className="flex-1">
       {/* Hero Section */}
-      <section className="relative h-screen pt-16">
+      <section className="relative h-screen overflow-hidden">
         <Image
           src="/images/city-map.jpg"
           alt="Map of Dakar Artistic Spots"
@@ -78,20 +46,14 @@ export default function Home() {
               </span>{" "}
               Through Art
             </h1>
-            <p className="text-gray-200 mb-6">blahsakbdsknfdnfksnfdskn.</p>
+            <p className="text-gray-200 mb-6">blhasakbdsknfdnfksnfdskn.</p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <button
                 onClick={() => setShowMap(true)}
-                className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition"
+                className="bg-white text-black border-2 px-6 py-3 rounded-lg font-semibold hover:bg-gradient-to-r hover:from-green-600 hover:via-yellow-500 hover:to-red-600 hover:text-white transition-all duration-300"
               >
                 Open Map
               </button>
-              <Link
-                href="/about"
-                className="border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
-              >
-                Learn More
-              </Link>
             </div>
           </motion.div>
         </div>
