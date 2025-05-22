@@ -43,3 +43,62 @@
   background-size: 600% 600%;
   animation: gradientShift 12s ease infinite;
 }
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+.gallery img {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  max-height: 300px; /* or whatever fits */
+  border-radius: 0.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Overlay hidden by default */
+input[type="checkbox"] + label .lightbox {
+  display: none;
+}
+
+/* When the peer checkbox is checked… */
+input[type="checkbox"]:checked + label .lightbox {
+  display: flex; /* or block + flexbox children */
+}
+
+/* Overlay styling */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Cursor hints */
+label img {
+  cursor: zoom-in;
+}
+.lightbox img {
+  cursor: zoom-out;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.prose p {
+  line-height: 1.75; /* adjust to taste */
+  margin-bottom: 1em; /* optional: add space between paras */
+}
