@@ -1,9 +1,7 @@
 "use client";
 
 import React from "react";
-import { MapContainer, TileLayer, Pane, Marker, Popup } from "react-leaflet";
-import artData from "../app/art-locations.json";
-import { createPinIcon } from "./PinIcon";
+import { MapContainer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 interface MapProps {

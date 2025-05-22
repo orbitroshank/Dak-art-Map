@@ -2,7 +2,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 import LocationsList from "../../components/LocationsList";
 
 export default function LocationsPage() {
@@ -14,7 +14,6 @@ export default function LocationsPage() {
     const slug = fileName.replace(/\.mdx?$/, "");
     const source = fs.readFileSync(path.join(postsDir, fileName), "utf8");
     const { data, content } = matter(source);
-    const match = content.match(/!\[.*?\]\((\/.*?)\)/);
     return {
       slug,
       title: data.title as string,

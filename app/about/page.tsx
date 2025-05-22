@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "About",
@@ -14,7 +14,7 @@ export default function AboutPage() {
       <main className="pt-24 pb-16 container mx-auto px-4 text-center">
         <h1 className="text-4xl font-bold mb-6 text-left">About the Project</h1>
         <p className="mb-4">
-          I'm Roshan Kalantarian, a gap-year student from St. John, USVI,
+          I am Roshan Kalantarian, a gap-year student from St. John, USVI,
           currently living in Dakar, Senegal through the YES Abroad program.
           Drawn to the vibrant fusion of traditional and contemporary art here,
           I set out to explore Dakar’s creative landscape firsthand.
