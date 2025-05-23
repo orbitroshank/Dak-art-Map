@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
-import MDXRenderer from "@/components/MDXRenderer";
+import MDXRenderer from "@/app/components/MDXRenderer";
 import Link from "next/link";
 
 type Params = { slug: string };

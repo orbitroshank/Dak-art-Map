@@ -2,8 +2,8 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Header from "@/components/Header";
-import LocationsList from "../../components/LocationsList";
+import Header from "@/app/components/Header";
+import LocationsList from "../components/LocationsList";
 
 export default function LocationsPage() {
   // runs only on the server

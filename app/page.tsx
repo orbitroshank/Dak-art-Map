@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 // Load interactive map client-only
-const MapClient = dynamic(() => import("@/components/MapClient"), {
+const MapClient = dynamic(() => import("@/app/components/MapClient"), {
   ssr: false,
 });
 

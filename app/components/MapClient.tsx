@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import artData from "../app/art-locations.json";
+import artData from "../art-locations.json";
 import { createPinIcon } from "./PinIcon";
 
 interface MapClientProps {
