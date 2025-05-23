@@ -58,6 +58,11 @@ export default function Home() {
               >
                 Open Map
               </button>
+              <button className="bg-transparent text-white border-2 px-6 py-3 rounded-lg font-semibold hover:bg-gradient-to-r hover:from-green-600 hover:via-yellow-500 hover:to-red-600 hover:text-white transition-all duration-300">
+                <Link href="/interview">
+                  Read an Interview with a Senegalese Artist
+                </Link>
+              </button>
             </div>
           </motion.div>
         </div>

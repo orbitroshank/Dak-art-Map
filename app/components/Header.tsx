@@ -36,6 +36,10 @@ export default function Header() {
           >
             Contact
           </Link>
+          <Link
+            href="/interview"
+            className="hover:text-gray-300 transition-colors duration-500"
+          ></Link>
         </nav>
       </div>
     </header>
