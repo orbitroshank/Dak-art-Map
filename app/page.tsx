@@ -20,7 +20,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-screen overflow-hidden">
         <Image
-          src="/images/city-map.jpg"
+          src="/Dak-art-Map/images/city-map.jpg"
           alt="Map of Dakar Artistic Spots"
           fill
           className="object-cover absolute inset-0 z-0"
