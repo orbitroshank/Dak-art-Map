@@ -61,7 +61,7 @@ export default function Home() {
 
               <Link href="/interview">
                 <button className="bg-transparent text-white border-2 text-sm px-4 py-2 rounded-md font-medium hover:bg-gradient-to-r hover:from-green-600 hover:via-yellow-500 hover:to-red-600 hover:text-white transition-all duration-300">
-                  Read an Interview with a Senegalese Artist
+                  Interview with Mouhamed Jawad Ly
                 </button>
               </Link>
             </div>
