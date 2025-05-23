@@ -16,7 +16,7 @@ export default function MapClient({ selectedSlug }: MapClientProps) {
   useEffect(() => {
     if (!mapRef.current) return;
 
-    // Initialize map centered on Dakar
+    // Map centered on Dakar
     const map = L.map(mapRef.current).setView([14.6937, -17.4441], 13);
 
     // Create a pane for tiles at lower z-index
@@ -39,7 +39,7 @@ export default function MapClient({ selectedSlug }: MapClientProps) {
       }
     ).addTo(map);
 
-    // If a specific location was selected, recenter and zoom in
+    // Recenter and zoom in
     if (selectedSlug) {
       const selected = artData.find((item) => item.slug === selectedSlug);
       if (selected) {

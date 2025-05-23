@@ -1,4 +1,3 @@
-// app/locations/[slug]/page.tsx
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -33,7 +32,6 @@ export default async function LocationPage({
     throw new Error("The front matter is missing the required 'title' field.");
   }
 
-  // Serialize MDX content with frontMatter scope
   const mdxSource = await serialize(content, { scope: data });
 
   return (

@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
 
-/* styles/globals.css */
 .hero-section {
   position: relative;
   overflow: hidden;
@@ -18,14 +17,13 @@
 .custom-pin-icon {
   display: inline-block;
   transform: translate(-50%, -100%);
-  pointer-events: none; /* clicks still hit the marker layer */
+  pointer-events: none;
 }
 
-/* ensure marker pane sits atop any tile layer */
 .leaflet-marker-pane {
   z-index: 650 !important;
 }
-/* globals.css */
+
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -54,7 +52,7 @@
 .gallery img {
   flex: 0 0 auto;
   scroll-snap-align: start;
-  max-height: 300px; /* or whatever fits */
+  max-height: 300px;
   border-radius: 0.5rem;
 }
 
@@ -68,17 +66,14 @@ input[type="checkbox"] {
   display: none;
 }
 
-/* Overlay hidden by default */
 input[type="checkbox"] + label .lightbox {
   display: none;
 }
 
-/* When the peer checkbox is checked… */
 input[type="checkbox"]:checked + label .lightbox {
-  display: flex; /* or block + flexbox children */
+  display: flex;
 }
 
-/* Overlay styling */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -103,6 +98,7 @@ label img {
   margin-bottom: 1em;
 }
 
+/* Text animation */
 .lava-text {
   background-color: #f4c300;
 

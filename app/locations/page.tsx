@@ -1,4 +1,3 @@
-// ← no "use client" here
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -6,7 +5,6 @@ import Header from "@/app/components/Header";
 import LocationsList from "../components/LocationsList";
 
 export default function LocationsPage() {
-  // runs only on the server
   const postsDir = path.join(process.cwd(), "posts/locations");
   const files = fs.readdirSync(postsDir).filter((f) => f.endsWith(".mdx"));
 
@@ -29,7 +27,6 @@ export default function LocationsPage() {
         <h1 className="lava-text text-4xl md:text-5xl font-bold mb-8">
           Art Locations
         </h1>
-        {/* hand off all interactivity to the client component */}
         <LocationsList locations={locations} />
       </main>
     </div>

@@ -7,7 +7,6 @@ import ReactPlayer from "react-player";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
-// Load interactive map client-only
 const MapClient = dynamic(() => import("@/app/components/MapClient"), {
   ssr: false,
 });
@@ -16,9 +15,8 @@ export default function Home() {
   const [showMap, setShowMap] = useState(false);
 
   return (
-    // Flex-1 ensures this page fills space between header and footer
     <div className="flex-1">
-      {/* Hero Section */}
+      {/* Background*/}
       <section className="relative h-screen overflow-hidden">
         <Image
           src="/Dak-art-Map/images/city-map.jpg"
@@ -28,11 +26,9 @@ export default function Home() {
           priority
           style={{ filter: "blur(1px)" }}
         />
-
-        {/* Contrast overlay */}
         <div className="absolute inset-0 bg-black/50 z-10" />
 
-        {/* Hero content */}
+        {/* Container */}
         <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -66,7 +62,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Map Modal */}
+      {/* Map */}
       <AnimatePresence>
         {showMap && (
           <motion.div
@@ -99,7 +95,7 @@ export default function Home() {
         )}
       </AnimatePresence>
 
-      {/* About Section */}
+      {/* About */}
       <section className="py-16 bg-black text-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
@@ -151,6 +147,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Video */}
       <section className="relative h-screen overflow-hidden">
         <ReactPlayer
           url="https://www.youtube.com/watch?v=xFCwSwU813g"

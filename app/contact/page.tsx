@@ -94,7 +94,7 @@ export default function ContactPage() {
             Or email me directly at{" "}
             <a
               href="mailto:obitroshank@gmail.com"
-              className="text-blue-600 hover:underline"
+              className="text-green-500 hover:underline"
             >
               obitroshank@gmail.com
             </a>
@@ -106,7 +106,7 @@ export default function ContactPage() {
               href="https://instagram.com/roshan.abroad"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-pink-600 hover:underline"
+              className="text-yellow-400 hover:underline"
             >
               @roshan.abroad
             </a>
