@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
-import MDXRenderer from "@/app/components/MDXRenderer";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 
 type Params = { slug: string };
@@ -27,6 +27,9 @@ export default async function LocationPage({
   const source = fs.readFileSync(fullPath, "utf8");
   const { content, data: rawData } = matter(source);
   const data = rawData as FrontMatter;
+  const MDXRenderer = dynamic(() => import("@/app/components/MDXRenderer"), {
+    ssr: false,
+  });
 
   if (!data.title) {
     throw new Error("The front matter is missing the required 'title' field.");
