@@ -12,7 +12,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gray-100">
       <Header />
       <main className="pt-24 pb-16 container mx-auto px-4 max-w-xl">
-        <h1 className="text-4xl font-bold mb-6">Contact</h1>
+        <h1 className="lava-text text-4xl font-bold mb-6">Contact</h1>
         <p className="mb-4">
           Want to suggest a new art spot in Dakar, or just say hi? Fill out the
           form below with your details, and it&rsquo;ll come straight to my

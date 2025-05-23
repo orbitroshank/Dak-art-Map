@@ -26,7 +26,9 @@ export default function LocationsPage() {
     <div className="min-h-screen bg-gray-100">
       <Header />
       <main className="pt-24 pb-16 container mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8">Art Locations</h1>
+        <h1 className="lava-text text-4xl md:text-5xl font-bold mb-8">
+          Art Locations
+        </h1>
         {/* hand off all interactivity to the client component */}
         <LocationsList locations={locations} />
       </main>

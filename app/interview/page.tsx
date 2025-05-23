@@ -10,11 +10,18 @@ export default function InterviewPage() {
         Interview with Mouhamed Jawad Ly
       </h1>
       <p className="text-center text-gray-600 mb-6">
-        I met Mouhamed Jawad Ly at the Village des Arts in Dakar, where he
-        works. I took an art class with him, and gained his contact information.
-        As an artist in the Biennale, I wanted to know what his thoughts were on
-        art in Dakar, as well as his own artistic journey. I asked him a few
-        questions, and he graciously answered them.
+        I met&nbsp;
+        <Link
+          href={"https://www.instagram.com/jawad_ly/"}
+          className="text-green-500 underline"
+        >
+          Mouhamed Jawad Ly
+        </Link>
+        &nbsp;at the Village des Arts in Dakar, where he works. I took an art
+        class with him, and gained his contact information. As an artist in the
+        Biennale, I wanted to know what his thoughts were on art in Dakar, as
+        well as his own artistic journey. I asked him a few questions, and he
+        graciously answered them.
         <br></br>
         <br></br>
         <Link
@@ -47,7 +54,7 @@ export default function InterviewPage() {
             Sénégal à travers mes œuvres. Je pense que tout ça fait partie de
             mon travail.
           </p>
-          <p className="mt-2 text-sm text-gray-500 italic">
+          <p className="mt-2 text-m text-gray-500 italic">
             I think being an artist is already a mission. For me, being an
             artist in Senegal means trying to help people understand what art
             is, since they aren&rsquo;t used to this world of art. It also means
@@ -76,7 +83,7 @@ export default function InterviewPage() {
             peu perdu avec le temps. C&rsquo;est pour ça que je manque rarement
             d&rsquo;inspiration sur mes œuvres.
           </p>
-          <p className="mt-2 text-sm text-gray-500 italic">
+          <p className="mt-2 text-m text-gray-500 italic">
             I&rsquo;m someone who really loves stories, especially African
             stories. I observe the evolution—past, present, and future—so I see
             a lot of new things and also things we&rsquo;ve somewhat lost over
@@ -113,7 +120,7 @@ export default function InterviewPage() {
             de voir des artistes accepter de vivre au même endroit. Je pense que
             c&rsquo;est ce qui le rend unique.
           </p>
-          <p className="mt-2 text-sm text-gray-500 italic">
+          <p className="mt-2 text-m text-gray-500 italic">
             The art scene in Dakar is truly beautiful. Artists often
             collaborate, which is very rare globally. There&rsquo;s also
             knowledge-sharing between them and newcomers—especially beginners. I
@@ -145,7 +152,7 @@ export default function InterviewPage() {
             gens. Notre plus grande arme est la connaissance et la recherche de
             la connaissance.
           </p>
-          <p className="mt-2 text-sm text-gray-500 italic">
+          <p className="mt-2 text-m text-gray-500 italic">
             There are many, but the priorities are to preserve our historical
             narratives and to educate people. Our greatest weapon is
             knowledge—and the pursuit of it.
@@ -173,7 +180,7 @@ export default function InterviewPage() {
             écoute avec beaucoup d&rsquo;attention les prédécesseurs et
             documente toi.
           </p>
-          <p className="mt-2 text-sm text-gray-500 italic">
+          <p className="mt-2 text-m text-gray-500 italic">
             Things are moving a lot, and that&rsquo;s already a good thing. But
             you need to understand the challenges ahead. If I had to give advice
             to a young person, I&rsquo;d say: listen a lot, observe, and act. If

@@ -12,7 +12,9 @@ export default function AboutPage() {
     <div className="min-h-screen bg-gray-100">
       <Header />
       <main className="pt-24 pb-16 container mx-auto px-4 text-center">
-        <h1 className="text-4xl font-bold mb-6 text-left">About the Project</h1>
+        <h1 className="lava-text text-4xl font-bold mb-6 text-left">
+          About the Project
+        </h1>
         <p className="mb-4">
           I am Roshan Kalantarian, a gap-year student from St. John, USVI,
           currently living in Dakar, Senegal through the YES Abroad program.

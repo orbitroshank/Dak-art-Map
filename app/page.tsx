@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import ReactPlayer from "react-player";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
@@ -39,12 +40,8 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="bg-black bg-opacity-70 p-8 rounded-2xl max-w-lg shadow-xl"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Exploring{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-yellow-400 to-red-500">
-                Dakar
-              </span>{" "}
-              Through Art
+            <h1 className="lava-text text-4xl md:text-5xl font-bold text-white mb-4">
+              Exploring Dakar Through Art
             </h1>
             <p className="text-gray-200 mb-6">
               This interactive art map of Dakar guides you through street
@@ -112,14 +109,26 @@ export default function Home() {
             Art is a central part of Senegalese culture, reflecting the
             country&rsquo;s history, traditions, and identity. In Dakar, art is
             woven into everyday life—on the walls of neighborhoods, in
-            galleries, and in public spaces. Walking down the corniche, there
-            are countless murals, sculptures, and other pieces of art. The goal
-            of this project is to count them. Traditional Senegalese art, such
-            as textile weaving, beadwork, and wood carving, has long been a way
-            to tell stories, preserve history, and build community. Over time,
+            galleries, and in public spaces. Traditional Senegalese art, such as
+            textile weaving, beadwork, and wood carving, has long been a way to
+            tell stories, preserve history, and build community. Over time,
             these practices have merged with modern styles, creating a diverse
-            artistic culture.
+            artistic culture. This project was inspired by the 2024 Dakar
+            Biennale, a major contemporary art event that showcases local and
+            foreign art, with an emphasis on African artists.
+            <br></br>
+            <br></br>
+            Walking down the Corniche, there are countless murals, sculptures,
+            and other pieces of art. The goal of{" "}
+            <span
+              className="bg-gradient-to-r from-green-500 via-yellow-400 to-red-500 
+                   bg-clip-text text-transparent font-semibold"
+            >
+              Dak(art)
+            </span>{" "}
+            is to attempt to count them.
           </p>
+          <br></br>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Link
               href="/locations"
@@ -131,16 +140,27 @@ export default function Home() {
               href="/contact"
               className="px-6 py-3 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-white rounded-lg text-yellow-400 font-medium transition"
             >
-              Contact Me
+              Suggest Art Spots
             </Link>
             <Link
               href="/about"
               className="px-6 py-3 border-2 border-red-500 hover:bg-red-500 hover:text-white rounded-lg text-red-500 font-medium transition"
             >
-              About
+              Learn More
             </Link>
           </div>
         </div>
+      </section>
+      <section className="relative h-screen overflow-hidden">
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=xFCwSwU813g"
+          playing
+          muted
+          loop
+          width="100%"
+          height="100%"
+          className="absolute inset-0 -z-10"
+        ></ReactPlayer>
       </section>
     </div>
   );

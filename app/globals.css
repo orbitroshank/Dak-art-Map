@@ -99,6 +99,51 @@ label img {
 }
 
 .prose p {
-  line-height: 1.75; /* adjust to taste */
-  margin-bottom: 1em; /* optional: add space between paras */
+  line-height: 1.75;
+  margin-bottom: 1em;
+}
+
+.lava-text {
+  background-color: #f4c300;
+
+  background-image: radial-gradient(
+      circle at 20% 25%,
+      #00853f 15%,
+      transparent 16%
+    ),
+    radial-gradient(circle at 75% 60%, #ce1126 12%, transparent 13%);
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: lavaMove 8s ease-in-out infinite alternate,
+    flagCycle 9s ease-in-out infinite;
+}
+
+@keyframes lavaMove {
+  0% {
+    background-position: 0% 0%, 100% 100%;
+  }
+  50% {
+    background-position: 50% 100%, 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%, 50% 50%;
+  }
+}
+
+@keyframes flagCycle {
+  0%,
+  100% {
+    background-color: #f4c300;
+  }
+  33% {
+    background-color: #ce1126;
+  }
+  66% {
+    background-color: #00853f;
+  }
 }
