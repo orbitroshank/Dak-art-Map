@@ -15,7 +15,8 @@ export default function ContactPage() {
         <h1 className="text-4xl font-bold mb-6">Contact</h1>
         <p className="mb-4">
           Want to suggest a new art spot in Dakar, or just say hi? Fill out the
-          form below with your details, and it’ll come straight to my inbox.
+          form below with your details, and it&rsquo;ll come straight to my
+          inbox.
         </p>
 
         {/* Fallback mailto form */}
@@ -75,7 +76,7 @@ export default function ContactPage() {
               name="Message"
               rows={4}
               className="mt-1 block w-full border rounded-md px-3 py-2"
-              placeholder="Tell me about the location, why it’s special, or any questions you have."
+              placeholder="Tell me about the location, why it&rsquo;s special, or any questions you have."
               required
             />
           </div>
