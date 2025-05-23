@@ -156,6 +156,11 @@ export default function Home() {
           url="https://www.youtube.com/watch?v=xFCwSwU813g"
           playing
           muted
+          controls={false}
+          onClick={() =>
+            window.open("https://www.youtube.com/watch?v=xFCwSwU813g", "_blank")
+          }
+          style={{ cursor: "pointer" }}
           loop
           width="100%"
           height="100%"
