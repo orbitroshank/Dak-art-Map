@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
+import Header from "@/app/components/Header";
 
 const questions = [
   {
@@ -35,10 +35,9 @@ const questions = [
 ];
 
 export default function InterviewPage() {
-  const [expanded, setExpanded] = useState<number | null>(null);
-
   return (
     <div className="min-h-screen bg-white px-4 py-10 md:px-10 lg:px-20">
+      <Header />
       <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">
         Interview with Mouhamed Jawad Ly
       </h1>
@@ -46,11 +45,10 @@ export default function InterviewPage() {
         {questions.map((q, index) => (
           <motion.div
             key={index}
-            className="border rounded-xl p-6 shadow hover:shadow-lg cursor-pointer bg-gray-50"
+            className="border rounded-xl p-6 shadow bg-gray-50"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}
-            onClick={() => setExpanded(expanded === index ? null : index)}
           >
             <h2 className="text-xl font-semibold text-gray-800 mb-2">
               🇫🇷{" "}
@@ -70,21 +68,19 @@ export default function InterviewPage() {
                 .replace(/”/g, "&rdquo;")
                 .replace(/'/g, "&#39;")}
             </h2>
-            {expanded === index && (
-              <motion.p
-                className="text-gray-700 mt-2 whitespace-pre-line"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                dangerouslySetInnerHTML={{
-                  __html: q.answer
-                    .replace(/’/g, "&rsquo;")
-                    .replace(/‘/g, "&lsquo;")
-                    .replace(/“/g, "&ldquo;")
-                    .replace(/”/g, "&rdquo;")
-                    .replace(/'/g, "&#39;"),
-                }}
-              />
-            )}
+            <motion.p
+              className="text-gray-700 mt-2 whitespace-pre-line"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              dangerouslySetInnerHTML={{
+                __html: q.answer
+                  .replace(/’/g, "&rsquo;")
+                  .replace(/‘/g, "&lsquo;")
+                  .replace(/“/g, "&ldquo;")
+                  .replace(/”/g, "&rdquo;")
+                  .replace(/'/g, "&#39;"),
+              }}
+            />
           </motion.div>
         ))}
       </div>
