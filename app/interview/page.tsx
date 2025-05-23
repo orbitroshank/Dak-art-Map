@@ -1,42 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function InterviewPage() {
   return (
-    <div className="min-h-screen bg-white px-4 pt-40 pb-10 md:px-10 lg:px-20 scroll-mt-24">
+    <div className="min-h-screen bg-white px-4 pt-40 pb-8 md:px-10 lg:px-20 scroll-mt-24">
       <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">
         Interview with Mouhamed Jawad Ly
       </h1>
-      <div className="space-y-10 max-w-4xl mx-auto">
-        <motion.div
-          className="bg-gray-50 p-6 rounded-xl shadow"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
+      <p className="text-center text-gray-600 mb-6">
+        I met Mouhamed Jawad Ly at the Village des Arts in Dakar, where he
+        works. I took an art class with him, and gained his contact information.
+        As an artist in the Biennale, I wanted to know what his thoughts were on
+        art in Dakar, as well as his own artistic journey. I asked him a few
+        questions, and he graciously answered them.
+        <br></br>
+        <br></br>
+        <Link
+          href={"/locations/village-des-arts"}
+          className="inline-block text-green-600 hover:underline font-medium"
         >
-          <p className="mb-2 font-semibold">
-            How do your surroundings or culture influence your work?
-          </p>
-          <p className="italic">
-            Comment ton environnement ou ta culture influence ton travail ?
-          </p>
-          <p className="mt-4 text-gray-700">
-            Alors faut savoir je suis quelqu&rsquo;un qui aime trop les
-            histoires, notamment les histoires africaines. Donc j&rsquo;observe
-            l&rsquo;évolution, le passé, le présent et le futur. Du coup je vois
-            beaucoup de nouveautés, et je vois aussi les choses qu&rsquo;on a un
-            peu perdu avec le temps. C&rsquo;est pour ça que je manque rarement
-            d&rsquo;inspiration sur mes œuvres.
-          </p>
-          <p className="mt-2 text-sm text-gray-500 italic">
-            I&rsquo;m someone who really loves stories, especially African
-            stories. I observe the evolution—past, present, and future—so I see
-            a lot of new things and also things we&rsquo;ve somewhat lost over
-            time. That&rsquo;s why I rarely lack inspiration for my work.
-          </p>
-        </motion.div>
-
+          Go to the Village des Arts post!
+        </Link>
+      </p>
+      <div className="space-y-10 max-w-4xl mx-auto">
         <motion.div
           className="bg-gray-50 p-6 rounded-xl shadow"
           initial={{ opacity: 0, y: 20 }}
@@ -65,6 +53,34 @@ export default function InterviewPage() {
             is, since they aren&rsquo;t used to this world of art. It also means
             telling and preserving Senegal&rsquo;s history through my work. I
             believe all of that is part of my job.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="bg-gray-50 p-6 rounded-xl shadow"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+        >
+          <p className="mb-2 font-semibold">
+            How do your surroundings or culture influence your work?
+          </p>
+          <p className="italic">
+            Comment ton environnement ou ta culture influence ton travail ?
+          </p>
+          <p className="mt-4 text-gray-700">
+            Alors faut savoir je suis quelqu&rsquo;un qui aime trop les
+            histoires, notamment les histoires africaines. Donc j&rsquo;observe
+            l&rsquo;évolution, le passé, le présent et le futur. Du coup je vois
+            beaucoup de nouveautés, et je vois aussi les choses qu&rsquo;on a un
+            peu perdu avec le temps. C&rsquo;est pour ça que je manque rarement
+            d&rsquo;inspiration sur mes œuvres.
+          </p>
+          <p className="mt-2 text-sm text-gray-500 italic">
+            I&rsquo;m someone who really loves stories, especially African
+            stories. I observe the evolution—past, present, and future—so I see
+            a lot of new things and also things we&rsquo;ve somewhat lost over
+            time. That&rsquo;s why I rarely lack inspiration for my work.
           </p>
         </motion.div>
 
