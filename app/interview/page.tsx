@@ -5,7 +5,7 @@ import Header from "@/app/components/Header";
 
 export default function InterviewPage() {
   return (
-    <div className="min-h-screen bg-white px-4 py-10 md:px-10 lg:px-20">
+    <div className="min-h-screen bg-white px-8 pb-8 py-10 md:px-10 lg:px-20">
       <Header />
       <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">
         Interview with Mouhamed Jawad Ly

@@ -51,18 +51,19 @@ export default function Home() {
               murals, galleries, and public art installations. Built with
               Next.js, React-Leaflet, and Framer Motion.
             </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <div className="flex flex-col items-center gap-4 justify-center">
               <button
                 onClick={() => setShowMap(true)}
                 className="bg-white text-black border-2 px-6 py-3 rounded-lg font-semibold hover:bg-gradient-to-r hover:from-green-600 hover:via-yellow-500 hover:to-red-600 hover:text-white transition-all duration-300"
               >
                 Open Map
               </button>
-              <button className="bg-transparent text-white border-2 px-6 py-3 rounded-lg font-semibold hover:bg-gradient-to-r hover:from-green-600 hover:via-yellow-500 hover:to-red-600 hover:text-white transition-all duration-300">
-                <Link href="/interview">
+
+              <Link href="/interview">
+                <button className="bg-transparent text-white border-2 text-sm px-4 py-2 rounded-md font-medium hover:bg-gradient-to-r hover:from-green-600 hover:via-yellow-500 hover:to-red-600 hover:text-white transition-all duration-300">
                   Read an Interview with a Senegalese Artist
-                </Link>
-              </button>
+                </button>
+              </Link>
             </div>
           </motion.div>
         </div>

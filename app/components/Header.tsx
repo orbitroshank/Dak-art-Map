@@ -39,7 +39,9 @@ export default function Header() {
           <Link
             href="/interview"
             className="hover:text-gray-300 transition-colors duration-500"
-          ></Link>
+          >
+            Interview
+          </Link>
         </nav>
       </div>
     </header>
