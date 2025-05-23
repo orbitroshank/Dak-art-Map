@@ -109,7 +109,7 @@ export default function Home() {
           </h2>
           <p className="leading-relaxed mb-6">
             Art is a central part of Senegalese culture, reflecting the
-            country&quot;s history, traditions, and identity. In Dakar, art is
+            country&rsquo;s history, traditions, and identity. In Dakar, art is
             woven into everyday life—on the walls of neighborhoods, in
             galleries, and in public spaces. Walking down the corniche, there
             are countless murals, sculptures, and other pieces of art. The goal

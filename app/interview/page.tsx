@@ -53,17 +53,37 @@ export default function InterviewPage() {
             onClick={() => setExpanded(expanded === index ? null : index)}
           >
             <h2 className="text-xl font-semibold text-gray-800 mb-2">
-              🇫🇷 {q.fr}
+              🇫🇷{" "}
+              {q.fr
+                .replace(/’/g, "&rsquo;")
+                .replace(/‘/g, "&lsquo;")
+                .replace(/“/g, "&ldquo;")
+                .replace(/”/g, "&rdquo;")
+                .replace(/'/g, "&#39;")}
             </h2>
-            <h2 className="text-lg italic text-gray-600 mb-4">🇺🇸 {q.en}</h2>
+            <h2 className="text-lg italic text-gray-600 mb-4">
+              🇺🇸{" "}
+              {q.en
+                .replace(/’/g, "&rsquo;")
+                .replace(/‘/g, "&lsquo;")
+                .replace(/“/g, "&ldquo;")
+                .replace(/”/g, "&rdquo;")
+                .replace(/'/g, "&#39;")}
+            </h2>
             {expanded === index && (
               <motion.p
                 className="text-gray-700 mt-2 whitespace-pre-line"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-              >
-                {q.answer}
-              </motion.p>
+                dangerouslySetInnerHTML={{
+                  __html: q.answer
+                    .replace(/’/g, "&rsquo;")
+                    .replace(/‘/g, "&lsquo;")
+                    .replace(/“/g, "&ldquo;")
+                    .replace(/”/g, "&rdquo;")
+                    .replace(/'/g, "&#39;"),
+                }}
+              />
             )}
           </motion.div>
         ))}

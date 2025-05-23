@@ -16,18 +16,18 @@ export default function AboutPage() {
         <p className="mb-4">
           I am Roshan Kalantarian, a gap-year student from St. John, USVI,
           currently living in Dakar, Senegal through the YES Abroad program.
-          Drawn to the art here, I wanted to explore and document Dakar&quot;s
+          Drawn to the art here, I wanted to explore and document Dakar&rsquo;s
           creativity firsthand.
         </p>
         <p className="mb-4">
           A key inspiration for my project was the Dakar Biennale of
-          Contemporary African Art (Dak&quot;Art), which took place in 2024 from
-          November 7 to December 7. As one of the most significant art events in
-          Africa, the Biennale showcases the creativity of artists from across
-          the continent and brings art to the forefront of public life in Dakar.
-          During the Biennale, I had the chance to visit numerous exhibition
-          locations and experience the city&quot;s full artistic energy
-          firsthand. I also participated in an art class led by an artist
+          Contemporary African Art (Dak&rsquo;Art), which took place in 2024
+          from November 7 to December 7. As one of the most significant art
+          events in Africa, the Biennale showcases the creativity of artists
+          from across the continent and brings art to the forefront of public
+          life in Dakar. During the Biennale, I had the chance to visit numerous
+          exhibition locations and experience the city&rsquo;s full artistic
+          energy firsthand. I also participated in an art class led by an artist
           featured in the Biennale, which gave me unique insights into their
           creative process and the themes they explored in their work. The
           experience deepened my appreciation for the Biennale and its role in
