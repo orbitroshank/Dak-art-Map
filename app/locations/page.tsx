@@ -13,7 +13,7 @@ export default function LocationsPage() {
   const locations = files.map((fileName) => {
     const slug = fileName.replace(/\.mdx?$/, "");
     const source = fs.readFileSync(path.join(postsDir, fileName), "utf8");
-    const { data, content } = matter(source);
+    const { data } = matter(source);
     return {
       slug,
       title: data.title as string,

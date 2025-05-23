@@ -3,6 +3,20 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Header from "./components/Header";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
+import * as React from "react";
+
+// Debug wrapper for useState (cannot override React.useState directly)
+function debugUseState<S>(...args: Parameters<typeof React.useState<S>>) {
+  if (
+    !(React as any).__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED
+      .ReactCurrentDispatcher.current
+  ) {
+    console.error("⚠️ useState() called outside of React render! Stack:");
+    console.error(new Error().stack);
+  }
+  return React.useState<S>(...args);
+}
+// To use: replace React.useState with debugUseState in your components if needed.
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
