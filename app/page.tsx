@@ -104,13 +104,13 @@ export default function Home() {
           </h2>
           <p className="leading-relaxed mb-6">
             Art is a central part of Senegalese culture, reflecting the
-            country’s history, traditions, and identity. In Dakar, art is woven
-            into everyday life—on the walls of neighborhoods, in galleries, and
-            in public spaces. Walking down the corniche, there are countless
-            murals, sculptures, and other pieces of art. The goal of this
-            project is to count them. Traditional Senegalese art, such as
-            textile weaving, beadwork, and wood carving, has long been a way to
-            tell stories, preserve history, and build community. Over time,
+            country&quot;s history, traditions, and identity. In Dakar, art is
+            woven into everyday life—on the walls of neighborhoods, in
+            galleries, and in public spaces. Walking down the corniche, there
+            are countless murals, sculptures, and other pieces of art. The goal
+            of this project is to count them. Traditional Senegalese art, such
+            as textile weaving, beadwork, and wood carving, has long been a way
+            to tell stories, preserve history, and build community. Over time,
             these practices have merged with modern styles, creating a diverse
             artistic culture.
           </p>
