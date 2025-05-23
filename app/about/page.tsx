@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "@/app/components/Header";
 import Image from "next/image";
 import { motion } from "framer-motion";
