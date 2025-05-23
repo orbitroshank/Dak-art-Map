@@ -4,7 +4,12 @@ import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import ReactPlayer from "react-player";
-import { AnimatePresence, motion } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useTransform,
+  useScroll,
+} from "framer-motion";
 import Link from "next/link";
 
 const MapClient = dynamic(() => import("@/app/components/MapClient"), {
@@ -13,19 +18,26 @@ const MapClient = dynamic(() => import("@/app/components/MapClient"), {
 
 export default function Home() {
   const [showMap, setShowMap] = useState(false);
+  const { scrollY } = useScroll();
+  const scale = useTransform(scrollY, [0, 100], [1, 0.8]);
 
   return (
     <div className="flex-1">
       {/* Background*/}
       <section className="relative h-screen overflow-hidden">
-        <Image
-          src="/Dak-art-Map/images/city-map.jpg"
-          alt="Map of Dakar Artistic Spots"
-          fill
-          className="object-cover absolute inset-0 z-0"
-          priority
-          style={{ filter: "blur(1px)" }}
-        />
+        <motion.div
+          style={{ scale }}
+          className="absolute inset-0 -z-10 overflow-hidden"
+        >
+          <Image
+            src="/Dak-art-Map/images/city-map.jpg"
+            alt="Map of Dakar Artistic Spots"
+            fill
+            className="object-cover absolute inset-0 z-0"
+            priority
+            style={{ filter: "blur(1px)" }}
+          />
+        </motion.div>
         <div className="absolute inset-0 bg-black/50 z-10" />
 
         {/* Container */}
