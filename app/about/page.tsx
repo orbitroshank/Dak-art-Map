@@ -48,7 +48,7 @@ export default function AboutPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="mb-4 text-left"
+          className="mb-4 text-center"
         >
           A key inspiration for my project was the Dakar Biennale of
           Contemporary African Art (Dak&rsquo;Art), which took place in 2024
@@ -68,7 +68,7 @@ export default function AboutPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="mb-4 text-left"
+          className="mb-4 text-center"
         >
           What makes the Dakar Biennale special is its accessibility—art is not
           confined to galleries but extends into the streets. There is the
@@ -87,7 +87,7 @@ export default function AboutPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.0, duration: 0.6 }}
-          className="text-left"
+          className="text-center"
         >
           Powered by Next.js, React-Leaflet, and Framer Motion, this site is
           designed to be intuitive for both locals and travelers. Going forward,
