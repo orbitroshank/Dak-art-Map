@@ -10,13 +10,13 @@ const questions = [
   },
   {
     en: "What does being an artist in Senegal mean to you?",
-    fr: "Qu’est-ce que ça veut dire pour toi d’être artiste au Sénégal ?",
+    fr: "Qu&rsquo;est-ce que ça veut dire pour toi d&rsquo;être artiste au Sénégal ?",
     answer:
       "Je pense qu&rsquo;&ecirc;tre un artiste est d&eacute;j&agrave; une mission pour moi &ecirc;tre un artiste ici au S&eacute;n&eacute;gal d&eacute;j&agrave; c&rsquo;est essayer de faire comprendre au gens qu&rsquo;est ce que c&rsquo;est l&rsquo;art parce que ils ne sont pas habitu&eacute;s &agrave; cette univers de l&rsquo;art et aussi raconter et immortaliser l&rsquo;histoire du S&eacute;n&eacute;gal &agrave; travers mes œuvres je pense que tout &ccedil;a fait partie de mon travail",
   },
   {
     en: "How would you describe the art scene in Dakar today, and what makes it unique?",
-    fr: "Comment tu décrirais la scène artistique à Dakar aujourd’hui, et qu’est-ce qui la rend unique ?",
+    fr: "Comment tu décrirais la scène artistique à Dakar aujourd&rsquo;hui, et qu&rsquo;est-ce qui la rend unique ?",
     answer:
       "La sc&egrave;ne artistique &agrave; Dakar est vraiment magnifique les artistes collaborent souvent et c&rsquo;est quelque choses de tr&egrave;s rare dans le monde et aussi y la transmission de cette connaissance entre eux et aux d&eacute;butants aussi surtout au d&eacute;butants je te parle en connaissance de cause\n\nEn plus ce qui le rend unique je pense que ya plusieurs aspects mais d&eacute;j&agrave; ce que je viens de dire la ya la gratuite entre eux et surtout les espaces publics comme village des art d&eacute;j&agrave; quelques ann&eacute;es en arri&egrave;re y&rsquo;avait des japonais qui sont venus au S&eacute;n&eacute;gal pour visiter et ils sont venus au village des arts mais ils &eacute;taient tous &eacute;tonn&eacute; sur le fait que des artistes vivent ensemble dans un espace de travail c&rsquo;est rare de voir des artistes accepte de vivre au m&ecirc;me endroit je pense que c&rsquo;est ce qui le rend unique",
   },
