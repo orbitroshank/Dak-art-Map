@@ -2,7 +2,6 @@
 "use client";
 import { MDXRemote } from "next-mdx-remote";
 import type { MDXRemoteSerializeResult } from "next-mdx-remote";
-import Image from "next/image";
 
 export default function MDXRenderer({
   source,
