@@ -1,15 +1,6 @@
-"use client";
-
-import type { Metadata } from "next";
 import Header from "@/app/components/Header";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-export const metadata: Metadata = {
-  title: "About",
-  description:
-    "Learn more about the interactive art map of Dakar and its creator, Roshan Kalantarian.",
-};
 
 export default function AboutPage() {
   return (
