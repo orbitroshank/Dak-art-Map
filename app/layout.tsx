@@ -28,6 +28,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Dak(art) Map",
   description: "An Interactive Map of Art Locations in Dakar",
+  icons: [{ rel: "icon", url: "/favicon.png" }],
 };
 
 export default function RootLayout({
