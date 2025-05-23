@@ -35,10 +35,45 @@
     "excerpt": "An 'OFF' part of the Biennale."
   },
   {
-    "slug": "tata-senegal-gallery",
-    "name": "Tata Senegal Gallery",
-    "lat": 14.6901,
-    "lng": -17.4458,
-    "excerpt": "Contemporary gallery space highlighting emerging Senegalese multimedia artists."
+    "slug": "corniche-birthday",
+    "name": "(Street Art) Corniche Murals (Seen On My Friend's Birthday)",
+    "lat": 14.668133337822068,
+    "lng": -17.443224999999984,
+    "excerpt": "Two murals within close walking distance that I saw with my school friends while celebrating one of their birthday's."
+  },
+  {
+    "slug": "corniche-sculptures",
+    "name": "(Street Art) Near Baie de Mermoz, along the Corniche",
+    "lat": 14.699916671055398,
+    "lng": -17.472896666666657,
+    "excerpt": "Walking along the Corniche, there are many artists (especially in sculpture) who have their work on display."
+  },
+  {
+    "slug": "hospital-volunteering",
+    "name": "(Event) American Councils Made Art at Albert Royer Hospital",
+    "lat": 14.69301,
+    "lng": -17.46488,
+    "excerpt": "A Christmas volunteering event where we painted rocks and leaves with children at the hospital."
+  },
+  {
+    "slug": "after-dinner-walks",
+    "name": "(Street Art) After Dinner Walks",
+    "lat": 14.698428340903957,
+    "lng": -17.463353333333345,
+    "excerpt": "Two murals I see on my occasional after dinner walk with my host parents."
+  },
+  {
+    "slug": "ile-de-goree",
+    "name": "Gorée Island",
+    "lat": 14.6679,
+    "lng": -17.3989,
+    "excerpt": "The memory island, a painful historic site filled with Senegalese Art."
+  },
+  {
+    "slug": "ban-workshop",
+    "name": "BAN Workshop",
+    "lat": 14.72902,
+    "lng": -17.49714,
+    "excerpt": "A pottery workshop where the cohort took classes."
   }
 ]
