@@ -53,7 +53,7 @@ export default function MapClient({ selectedSlug }: MapClientProps) {
         <div style=\"display: flex; flex-direction: column; gap: 4px;\">
           <strong>${item.name}</strong>
           <p>${item.excerpt}</p>
-          <a href=\"/locations/${item.slug}\" style=\"color: #2563EB; text-decoration: underline;\">Read more →</a>
+          <a href=\"/Dak-art-Map/locations/${item.slug}\" style=\"color: #2563EB; text-decoration: underline;\">Read more →</a>
         </div>
       `;
 

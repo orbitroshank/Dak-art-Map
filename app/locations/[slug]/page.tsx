@@ -66,7 +66,7 @@ export default async function LocationPage({
         <footer className="mt-12 text-center">
           <Link
             href="/locations"
-            className="inline-block text-blue-600 hover:underline font-medium"
+            className="inline-block text-green-600 hover:underline font-medium"
           >
             ← Back to all locations
           </Link>
