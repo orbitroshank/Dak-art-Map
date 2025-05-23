@@ -18,6 +18,20 @@ export default function AboutPage() {
           About the Project
         </motion.h1>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="relative block rounded-2xl mx-auto my-4 w-150 h-150"
+        >
+          <Image
+            src="/Dak-art-Map/images/roshan-k.JPEG"
+            alt="Roshan Kalantarian with their host parents"
+            className="object-cover absolute inset-0 z-0"
+            priority
+          />
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -29,20 +43,6 @@ export default function AboutPage() {
           Drawn to the art here, I wanted to explore and document Dakar&rsquo;s
           creativity firsthand.
         </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="relative block mx-auto my-4 w-150 h-150"
-        >
-          <Image
-            src="/Dak-art-Map/images/roshan-k.JPEG"
-            alt="Roshan Kalantarian with their host parents"
-            className="object-cover absolute inset-0 z-0"
-            priority
-          />
-        </motion.div>
 
         <motion.p
           initial={{ opacity: 0 }}
