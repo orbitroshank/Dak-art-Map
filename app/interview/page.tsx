@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Header from "@/app/components/Header";
-
 export default function InterviewPage() {
   return (
     <div className="min-h-screen bg-white px-4 py-10 md:px-10 lg:px-20">
