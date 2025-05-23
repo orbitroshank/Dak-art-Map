@@ -16,21 +16,43 @@ export default function AboutPage() {
         <p className="mb-4">
           I am Roshan Kalantarian, a gap-year student from St. John, USVI,
           currently living in Dakar, Senegal through the YES Abroad program.
-          Drawn to the vibrant fusion of traditional and contemporary art here,
-          I set out to explore Dakar’s creative landscape firsthand.
+          Drawn to the art here, I wanted to explore and document Dakar’s
+          creativity firsthand.
         </p>
         <p className="mb-4">
-          Inspired by the 2024 Dakar Biennale—where public murals,
-          installations, and gallery exhibitions brought an amazing energy to
-          the city—I built this interactive map to share Senegal’s rich art
-          scene. Each location features photos, context, and local insights
-          gathered through visits and artist conversations.
+          A key inspiration for my project was the Dakar Biennale of
+          Contemporary African Art (Dak’Art), which took place in 2024 from
+          November 7 to December 7. As one of the most significant art events in
+          Africa, the Biennale showcases the creativity of artists from across
+          the continent and brings art to the forefront of public life in Dakar.
+          During the Biennale, I had the chance to visit numerous exhibition
+          locations and experience the city’s full artistic energy firsthand. I
+          also participated in an art class led by an artist featured in the
+          Biennale, which gave me unique insights into their creative process
+          and the themes they explored in their work. The experience deepened my
+          appreciation for the Biennale and its role in celebrating and sharing
+          African art.
+          <p className="mb-4">
+            What makes the Dakar Biennale special is its accessibility—art is
+            not confined to galleries but extends into the streets. There is the
+            "ON" program and "OFF," with the former corresponding to the
+            bigger-name art sites and the latter to street art. Murals,
+            sculptures, and installations pop up in neighborhoods and public
+            spaces, transforming Dakar into an open-air museum. This approach
+            reflects how deeply public art is embedded in Senegalese culture.
+            Murals and other forms of street art are not just decorative; they
+            carry messages about history, identity, and social change. They
+            connect with local communities while also inviting visitors to see
+            Dakar in a new way.
+          </p>
         </p>
         <p>
           Powered by Next.js, React-Leaflet, and Framer Motion, this site is
           designed to be intuitive for both locals and travelers. Going forward,
           I plan to add artist interviews, new art routes, and multilingual
-          support, hoping to spark curiosity and connection through art.
+          support in Wolof and French. I would also love to expand this project
+          to include the insights of others as well as more locations in the
+          world.
         </p>
       </main>
     </div>

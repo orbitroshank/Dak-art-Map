@@ -46,7 +46,11 @@ export default function Home() {
               </span>{" "}
               Through Art
             </h1>
-            <p className="text-gray-200 mb-6">blhasakbdsknfdnfksnfdskn.</p>
+            <p className="text-gray-200 mb-6">
+              This interactive art map of Dakar guides you through street
+              murals, galleries, and public art installations. Built with
+              Next.js, React-Leaflet, and Framer Motion.
+            </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <button
                 onClick={() => setShowMap(true)}
@@ -99,10 +103,16 @@ export default function Home() {
             About This Project
           </h2>
           <p className="leading-relaxed mb-6">
-            This interactive art map of Dakar guides you through street murals,
-            galleries, and public art installations. Built with Next.js,
-            React-Leaflet, and Framer Motion, it lets you open the full map for
-            pan, zoom and marker details, then close it to continue exploring.
+            Art is a central part of Senegalese culture, reflecting the
+            country’s history, traditions, and identity. In Dakar, art is woven
+            into everyday life—on the walls of neighborhoods, in galleries, and
+            in public spaces. Walking down the corniche, there are countless
+            murals, sculptures, and other pieces of art. The goal of this
+            project is to count them. Traditional Senegalese art, such as
+            textile weaving, beadwork, and wood carving, has long been a way to
+            tell stories, preserve history, and build community. Over time,
+            these practices have merged with modern styles, creating a diverse
+            artistic culture.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Link
