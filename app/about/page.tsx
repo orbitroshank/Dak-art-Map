@@ -22,13 +22,14 @@ export default function AboutPage() {
           Drawn to the art here, I wanted to explore and document Dakar&rsquo;s
           creativity firsthand.
         </p>
-        <Image
-          src="/Dak-art-Map/images/roshan-k.JPEG"
-          alt="Roshan Kalantarian with their host parents"
-          fill
-          className="object-cover absolute inset-0 z-0"
-          priority
-        />
+        <div className="relative block mx-auto my-4 w-32 h-24">
+          <Image
+            src="/Dak-art-Map/images/roshan-k.JPEG"
+            alt="Roshan Kalantarian with their host parents"
+            className="object-cover absolute inset-0 z-0"
+            priority
+          />
+        </div>
         <p className="mb-4">
           A key inspiration for my project was the Dakar Biennale of
           Contemporary African Art (Dak&rsquo;Art), which took place in 2024
