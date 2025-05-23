@@ -14,19 +14,31 @@ export default function AboutPage() {
     <div className="min-h-screen bg-gray-100">
       <Header />
       <main className="pt-24 pb-16 container mx-auto px-4 text-center">
-        <h1 className="lava-text text-4xl font-bold mb-6 text-left">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="lava-text text-4xl font-bold mb-6 text-left"
+        >
           About the Project
-        </h1>
-        <p className="mb-4">
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="mb-4"
+        >
           I am Roshan Kalantarian, a gap-year student from St. John, USVI,
           currently living in Dakar, Senegal through the YES Abroad program.
           Drawn to the art here, I wanted to explore and document Dakar&rsquo;s
           creativity firsthand.
-        </p>
+        </motion.p>
+
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
           className="relative block mx-auto my-4 w-150 h-150"
         >
           <Image
@@ -36,8 +48,13 @@ export default function AboutPage() {
             priority
           />
         </motion.div>
-        <br></br>
-        <p className="mb-4">
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="mb-4 text-left"
+        >
           A key inspiration for my project was the Dakar Biennale of
           Contemporary African Art (Dak&rsquo;Art), which took place in 2024
           from November 7 to December 7. As one of the most significant art
@@ -50,28 +67,40 @@ export default function AboutPage() {
           creative process and the themes they explored in their work. The
           experience deepened my appreciation for the Biennale and its role in
           celebrating and sharing African art.
-          <p className="mb-4">
-            What makes the Dakar Biennale special is its accessibility—art is
-            not confined to galleries but extends into the streets. There is the
-            &ldquo;ON&ldquo; program and &ldquo;OFF,&ldquo; with the former
-            corresponding to the bigger-name art sites and the latter to street
-            art. Murals, sculptures, and installations pop up in neighborhoods
-            and public spaces, transforming Dakar into an open-air museum. This
-            approach reflects how deeply public art is embedded in Senegalese
-            culture. Murals and other forms of street art are not just
-            decorative; they carry messages about history, identity, and social
-            change. They connect with local communities while also inviting
-            visitors to see Dakar in a new way.
-          </p>
-        </p>
-        <p>
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8, duration: 0.6 }}
+          className="mb-4 text-left"
+        >
+          What makes the Dakar Biennale special is its accessibility—art is not
+          confined to galleries but extends into the streets. There is the
+          &ldquo;ON&ldquo; program and &ldquo;OFF,&ldquo; with the former
+          corresponding to the bigger-name art sites and the latter to street
+          art. Murals, sculptures, and installations pop up in neighborhoods and
+          public spaces, transforming Dakar into an open-air museum. This
+          approach reflects how deeply public art is embedded in Senegalese
+          culture. Murals and other forms of street art are not just decorative;
+          they carry messages about history, identity, and social change. They
+          connect with local communities while also inviting visitors to see
+          Dakar in a new way.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.0, duration: 0.6 }}
+          className="text-left"
+        >
           Powered by Next.js, React-Leaflet, and Framer Motion, this site is
           designed to be intuitive for both locals and travelers. Going forward,
           I plan to add artist interviews, new art routes, and multilingual
           support in Wolof and French. I would also love to expand this project
           to include the insights of others as well as more locations in the
           world.
-        </p>
+        </motion.p>
       </main>
     </div>
   );
