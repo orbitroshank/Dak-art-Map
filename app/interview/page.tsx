@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function InterviewPage() {
   return (
-    <div className="min-h-screen bg-white px-4 py-32 md:px-10 lg:px-20">
+    <div className="max-w-3xl w-full mx-auto bg-white p-8 rounded-2xl shadow-lg">
       <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">
         Interview with Mouhamed Jawad Ly
       </h1>
