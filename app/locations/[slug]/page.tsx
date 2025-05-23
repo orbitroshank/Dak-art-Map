@@ -1,3 +1,5 @@
+"use client";
+
 // app/locations/[slug]/page.tsx
 import fs from "fs";
 import path from "path";
