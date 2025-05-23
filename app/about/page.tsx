@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/app/components/Header";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -21,6 +22,13 @@ export default function AboutPage() {
           Drawn to the art here, I wanted to explore and document Dakar&rsquo;s
           creativity firsthand.
         </p>
+        <Image
+          src="/Dak-art-Map/images/roshan-k.JPEG"
+          alt="Roshan Kalantarian with their host parents"
+          fill
+          className="object-cover absolute inset-0 z-0"
+          priority
+        />
         <p className="mb-4">
           A key inspiration for my project was the Dakar Biennale of
           Contemporary African Art (Dak&rsquo;Art), which took place in 2024

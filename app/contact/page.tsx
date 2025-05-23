@@ -89,7 +89,7 @@ export default function ContactPage() {
           </button>
         </form>
 
-        <div className="mt-6 text-sm text-gray-600 space-y-2">
+        <div className="mt-6 text-m text-gray-600 space-y-2">
           <p>
             Or email me directly at{" "}
             <a
@@ -106,7 +106,7 @@ export default function ContactPage() {
               href="https://instagram.com/roshan.abroad"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-yellow-400 hover:underline"
+              className="text-red-500 hover:underline"
             >
               @roshan.abroad
             </a>
