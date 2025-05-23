@@ -1,15 +1,19 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
-
+// next.config.js
 /** @type {import('next').NextConfig} */
-module.exports = {
-  output: "export", // if you aren’t already exporting
+const nextConfig = {
+  experimental: { appDir: true },
+
+  // for static export:
+  output: "export",
+  trailingSlash: true,
+
+  // when deployed under /Dak-art-Map on GitHub pages:
+  basePath: process.env.NODE_ENV === "production" ? "/Dak-art-Map" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/Dak-art-Map/" : "",
+
   images: {
-    unoptimized: true, // ← disable Next’s image optimizer
+    unoptimized: true, // since you're doing a static export
   },
 };
+
+module.exports = nextConfig;
