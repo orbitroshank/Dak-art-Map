@@ -1,3 +1,5 @@
+"use client";
+
 import type { Metadata } from "next";
 import Header from "@/app/components/Header";
 import Image from "next/image";
