@@ -1,12 +1,11 @@
-"use client";
-
 // app/locations/[slug]/page.tsx
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
-import dynamic from "next/dynamic";
+import ClientOnly from "@/app/components/ClientOnly";
 import Link from "next/link";
+import MDXRenderer from "@/app/components/MDXRenderer";
 
 type Params = { slug: string };
 type FrontMatter = { title: string; excerpt?: string; date?: string };
@@ -29,9 +28,6 @@ export default async function LocationPage({
   const source = fs.readFileSync(fullPath, "utf8");
   const { content, data: rawData } = matter(source);
   const data = rawData as FrontMatter;
-  const MDXRenderer = dynamic(() => import("@/app/components/MDXRenderer"), {
-    ssr: false,
-  });
 
   if (!data.title) {
     throw new Error("The front matter is missing the required 'title' field.");
@@ -62,7 +58,9 @@ export default async function LocationPage({
         </header>
 
         <div className="prose prose-lg prose-gray mx-auto text-center">
-          <MDXRenderer source={mdxSource} />
+          <ClientOnly>
+            <MDXRenderer source={mdxSource} />
+          </ClientOnly>
         </div>
 
         <footer className="mt-12 text-center">
