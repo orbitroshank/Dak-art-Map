@@ -22,12 +22,12 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="relative flex rounded-2xl mx-auto my-4 w-150 h-150"
+          className="relative mx-auto my-4 w-32 h-32 sm:w-48 sm:h-48 md:w-150 md:h-150 rounded-full overflow-hidden"
         >
           <Image
             src="/Dak-art-Map/images/roshan-k.JPEG"
             alt="Roshan Kalantarian with their host parents"
-            className="object-cover rounded-2x1 absolute inset-0 z-0"
+            className="object-cover"
             priority
           />
         </motion.div>
