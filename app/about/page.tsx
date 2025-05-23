@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/app/components/Header";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const metadata: Metadata = {
   title: "About",
@@ -22,14 +23,19 @@ export default function AboutPage() {
           Drawn to the art here, I wanted to explore and document Dakar&rsquo;s
           creativity firsthand.
         </p>
-        <div className="relative block mx-auto my-4 w-75 h-75">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative block mx-auto my-4 w-150 h-150"
+        >
           <Image
             src="/Dak-art-Map/images/roshan-k.JPEG"
             alt="Roshan Kalantarian with their host parents"
             className="object-cover absolute inset-0 z-0"
             priority
           />
-        </div>
+        </motion.div>
         <br></br>
         <p className="mb-4">
           A key inspiration for my project was the Dakar Biennale of
