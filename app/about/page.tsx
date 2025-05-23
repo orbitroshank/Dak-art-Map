@@ -27,7 +27,7 @@ export default function AboutPage() {
           <Image
             src="/Dak-art-Map/images/roshan-k.JPEG"
             alt="Roshan Kalantarian with their host parents"
-            className="object-cover absolute inset-0 z-0"
+            className="object-cover rounded-2x1 absolute inset-0 z-0"
             priority
           />
         </motion.div>
